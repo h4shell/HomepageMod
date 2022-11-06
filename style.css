@@ -1,0 +1,196 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.riga{
+  min-width: 1000px;
+  height: 240px;
+  padding-left: 60px ;
+  padding-right: 60px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+
+  flex-wrap: wrap;
+}
+
+a{
+  text-decoration: none;
+  color: black!important;
+  display: inline;
+}
+
+
+
+.cards h3{
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.cards{
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contimg{
+  display: flex;
+  justify-content: center;
+  
+  padding-bottom: 1.3rem ;
+
+}
+
+img{
+  width: 60%;
+  height: auto;
+}
+
+.cards{
+  transition: all 0.3s ease-in-out;
+}
+.cards:hover{
+  transform: scale(1.2);
+  color: rgb(0, 81, 255)
+  
+}
+
+#datetime{
+  font-size: 4rem;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  font-weight: 750;
+  opacity: 0.7;
+}
+
+#cerca{
+  position: relative;
+  width: 600px;
+  height: 50px;
+  padding-left: 20px ;
+  border-radius: 30px;
+  border: solid 1px rgb(202, 202, 202);
+}
+
+#searchButton{
+  position: absolute;
+  background-color: transparent;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30%;
+  border: none;
+}
+
+.svgContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rigaSearch{
+  min-width: 1000px;
+  height: 125px;
+  padding-left: 60px ;
+  padding-right: 60px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+#cerca:focus{
+  background: none;
+  color: rgb(119, 119, 119);
+  outline: none;
+  
+}
+
+
+
+@media (max-width:1000px) {
+
+  #cerca{
+    position: relative;
+    width: 80vw;
+    
+    padding-left: 20px ;
+    border-radius: 30px;
+    border: solid 1px rgb(202, 202, 202);
+  }
+  
+
+  .riga{
+    min-width: auto;
+    height: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+  }
+
+  .rigaSearch{
+    min-width: auto;
+    width: auto;
+    height: 125px;
+    padding-left: 60px ;
+    padding-right: 60px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+  }
+
+  #datetime{
+    display: none;
+  }
+
+ 
+
+  .cards h3{
+    font-size: 12px;
+    text-align: center;
+  
+  }
+
+  .contimg{
+    padding: 0 ;
+  }
+
+  .cards h3{padding: 10px;}
+  
+}
+
+
+input[type="search"]::-webkit-search-decoration,
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-results-button,
+        input[type="search"]::-webkit-search-results-decoration {
+        display:none};
+
+
